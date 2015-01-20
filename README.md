@@ -18,3 +18,5 @@ Usage:
  *		(See CPPM-RX.h to adjust pulse number if your receiver is different)
  *		
  *		RX_Fail() -- this function will return TRUE if last pulse was seen more than 0.5s ago
+ *		
+ *		CPPM_display()  -- this function will output the current pulse values to the default serial port.  Used for testing.
