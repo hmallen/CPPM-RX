@@ -56,13 +56,11 @@ unsigned long	CPPM_TimePrevious = 0;
 
 void CPPM_ISR()
 {
-	unsigned long static	CPPM_TimeNow;
-	int	static				CPPM_Pulse;
-	byte static				CPPM_Pointer = 0;
+	byte static CPPM_Pointer = 0;
 
-	CPPM_TimeNow 		= micros();		// 
-	CPPM_Pulse   		= int(CPPM_TimeNow - CPPM_TimePrevious) - 1500;		// all channels have a center point at 1500
-	CPPM_TimePrevious	= CPPM_TimeNow;
+	unsigned long CPPM_TimeNow = micros();
+	int CPPM_Pulse = int(CPPM_TimeNow - CPPM_TimePrevious); // pulse time in micro seconds
+	CPPM_TimePrevious = CPPM_TimeNow;
 
 	if(CPPM_Pulse < 2600)		// short pulse indicates channel
 	{	
