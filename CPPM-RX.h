@@ -78,7 +78,7 @@ void CPPM_ISR()
 
 void StartCPPM(int intPin)
 {
-	attachInterrupt(intPin, CPPM_ISR, RISING);
+	attachInterrupt(digitalPinToInterrupt(intPin), CPPM_ISR, RISING);
 }
 
 
@@ -91,7 +91,10 @@ byte RX_Fail()	// check if last observed pulse was more than 0.5s ago
 	return 0;		// RC link good
 }
 
-
+byte RX_Good()	// check if last observed pulse was more than 0.5s ago
+{
+	return !RX_Fail();		// RC link good
+}
 
 byte AilerNew()	// return true if a new pulse has been received
 {
