@@ -42,12 +42,12 @@
 	// map channels to more readable names
 	#define RC_THROT	CPPM_Channels[CPPM_THROT_INDEX]
 	#define RC_AILER	CPPM_Channels[CPPM_AILER_INDEX]
-	#define RC_ELEV	CPPM_Channels[CPPM_ELEV_INDEX]
-	#define RC_RUDD	CPPM_Channels[CPPM_RUDD_INDEX]
-	#define RC_MODE	CPPM_Channels[CPPM_MODE_INDEX]
-	#define RC_AUX1	CPPM_Channels[CPPM_AUX1_INDEX]
-	#define RC_AUX2	CPPM_Channels[CPPM_AUX2_INDEX]
-	#define RC_AUX3	CPPM_Channels[CPPM_AUX3_INDEX]
+	#define RC_ELEV		CPPM_Channels[CPPM_ELEV_INDEX]
+	#define RC_RUDD		CPPM_Channels[CPPM_RUDD_INDEX]
+	#define RC_MODE		CPPM_Channels[CPPM_MODE_INDEX]
+	#define RC_AUX1		CPPM_Channels[CPPM_AUX1_INDEX]
+	#define RC_AUX2		CPPM_Channels[CPPM_AUX2_INDEX]
+	#define RC_AUX3		CPPM_Channels[CPPM_AUX3_INDEX]
 
 
 	byte CPPM_FLAGS = 0;
