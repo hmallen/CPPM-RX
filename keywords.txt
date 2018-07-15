@@ -6,5 +6,5 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-CPPM-RX		KEYWORD1
+CPPM-RX	KEYWORD1
 
