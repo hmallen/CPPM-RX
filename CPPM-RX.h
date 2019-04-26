@@ -41,7 +41,7 @@
 #ifndef CPPM_RX_H
    #define CPPM_RX_H
 
-   #include "arduino.h"
+   #include "Arduino.h"
 
    // change these index numbers to match the receiver being used
    #define CPPM_AILER_INDEX   0   // Orange RX R615X
@@ -204,8 +204,6 @@
 
    void CPPM_display()
    {
-      #ifdef SERIAL_PORT
-
          String outputBuffer;
 
          for(byte i = 0; i < 8; i++)
@@ -216,10 +214,7 @@
 
          outputBuffer += '\n';
 
-         SERIAL_PORT.print(outputBuffer);
-
-      #endif
+         Serial.print(outputBuffer);
    }
-
 
 #endif
